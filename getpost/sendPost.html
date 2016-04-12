@@ -5,17 +5,18 @@
     <title>Send Post</title>
 </head>
 <body>
-<form action="printPost.php" method="post">
+<form action="printPost.php" method="Get">
     <label>Title</label>
     <input type="text"  name="title"><br/>
     <label>Content</label>
-    <textarea name="Content" cols="50" rows="5">write your content</textarea><br/>
+    <textarea name="Content" cols="50" rows="5">write your content</textarea><br>
     <label>Category</label>
-    <input type="radio" name="category" value="Cat" checked> Cat<br>
-    <input type="radio" name="category" value="Dog"> Dog<br>
-    <input type="radio" name="category" value="Misc"> Misc
+   <select name="category">
+       <option value="Cat">Cat</option>
+       <option value="Dog">Dog</option>
+       <option value="Misc">Misc</option>
+   </select>
     <input type="submit" value="Submit">
-
 </form>
 
 </body>
