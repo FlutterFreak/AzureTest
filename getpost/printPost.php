@@ -6,7 +6,7 @@
  * Time: 09:30
  */
 
-$title=$_POST["title"];
+/**$title=$_POST["title"];
 $content=$_POST["content"];
 $category=$_POST["category"];
 /** echo "<article>";
