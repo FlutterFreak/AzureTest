@@ -1,3 +1,24 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: 1516734
+ * Date: 22/03/2016
+ * Time: 10:08
+ */
+include ("db_connect.php");
+
+$bugName = $_post["bugName"];
+$BugSummary = $_post["BugSummary"];
+$BugCategory = $_post["BugCategory"];
+$sql = "INSERT INTO bugs (bugName, BugSummary, BugCategory ) VALUES ('$bugName','$BugSummary','$BugCategory')";
+
+if (mysqli_query($db,$sql)){}
+else {
+    echo "Error:" . $sql . "<br>" . msqli_error($db);
+}
+header("location:index.php");
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -76,17 +97,17 @@ and open the template in the editor.
                     
                     <div class = "row" style="margin-top: 10px;">
                         <div class="col-md-3"> Bug Name</div>
-                        <div class="col-md-9"> <input type="text" class="form-control"> </div>
+                        <div class="col-md-9"> <input type="text" name="bugName" class="form-control"> </div>
                     </div>
                     
                       <div class = "row" style="margin-top:10px;">
                         <div class="col-md-3"> Bug summary</div>
-                        <div class="col-md-9"> <textarea class="form-control"></textarea> </div>
+                        <div class="col-md-9"> <textarea name="Bugsummary"class="form-control"></textarea> </div>
                     </div>
                     
                       <div class = "row" style="margin-top: 10px;">
                         <div class="col-md-3"> Bug Catagory </div>
-                        <div class="col-md-9"> <input type="text" class="form-control"></div>
+                        <div class="col-md-9"> <input type="text" name="BugCategory" class="form-control"></div>
                     </div>
                     <div class="row" style="margin-top: 10px">
                         <div class="col-md-2" style="float:right;">

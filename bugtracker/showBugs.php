@@ -16,6 +16,8 @@ and open the template in the editor.
         <title>BugTracker</title>
     </head>
     <body>
+
+
         
         <div class="container border">
 
@@ -140,7 +142,8 @@ and open the template in the editor.
             
         
         
-        
+
+
     </body>
 </html>
 
