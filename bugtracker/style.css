@@ -1,0 +1,24 @@
+.image-logo{
+    width: 150px;
+}
+
+.navbar{
+    
+}
+
+.min-height{
+    min-height: 500px;
+}
+
+.footer{
+    
+    text-align: center;
+    height: 100px;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+.border{
+    border: #000 dotted thin;
+    
+}
